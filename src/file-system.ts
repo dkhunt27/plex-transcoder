@@ -1,16 +1,14 @@
 import dirTree = require('directory-tree');
 import deepReduce = require('deep-reduce');
-
-interface IObj {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any;
-}
+import { MediaFile } from './types.js';
 
 export const listMediaFiles = (params: {
   mediaPath: string;
   extensions?: RegExp;
-}): IObj[] => {
+}): MediaFile[] => {
   const { mediaPath, extensions } = params;
+
+  console.log(`${new Date().toLocaleString()} building list of media files`);
 
   const tree = dirTree(mediaPath, {
     attributes: ['extension'],
@@ -23,8 +21,8 @@ export const listMediaFiles = (params: {
     fileList = deepReduce(
       tree,
       (reduced, value) => {
-        // console.log({ reduced, value, path });
-        if (value.extension) {
+        // console.log({ reduced, value });
+        if (value.extension && value.path.indexOf('Plex Versions') === -1) {
           reduced.push(value);
         }
         return reduced;

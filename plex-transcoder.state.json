@@ -1,0 +1,116 @@
+[
+  {
+    "path": "tests/media/avi/Test.avi",
+    "name": "Test.avi",
+    "extension": ".avi",
+    "processed": false,
+    "ignore": false,
+    "transcoded": {},
+    "metadata": {
+      "original": {
+        "filename": "tests/media/avi/Test.avi",
+        "title": "",
+        "artist": "",
+        "album": "",
+        "track": "",
+        "date": "",
+        "synched": true,
+        "duration": {
+          "raw": "00:00:30.61",
+          "seconds": 30
+        },
+        "video": {
+          "container": "avi",
+          "bitrate": 595,
+          "stream": 0,
+          "codec": "h264",
+          "resolution": {
+            "w": 1920,
+            "h": 1080
+          },
+          "resolutionSquare": {
+            "w": 1920,
+            "h": 1080
+          },
+          "aspect": {
+            "x": 16,
+            "y": 9,
+            "string": "16:9",
+            "value": 1.7777777777777777
+          },
+          "rotate": 0,
+          "fps": 30,
+          "pixelString": "1:1",
+          "pixel": 1
+        },
+        "audio": {
+          "codec": "aac",
+          "bitrate": "139",
+          "sample_rate": 48000,
+          "stream": 0,
+          "channels": {
+            "raw": "stereo",
+            "value": 2
+          }
+        }
+      }
+    }
+  },
+  {
+    "path": "tests/movie/Minions.mp4",
+    "name": "Minions.mp4",
+    "extension": ".mp4",
+    "processed": false,
+    "ignore": false,
+    "transcoded": {},
+    "metadata": {
+      "original": {
+        "filename": "tests/movie/Minions.mp4",
+        "title": "Minions The Rise Of Gru",
+        "artist": "",
+        "album": "",
+        "track": "",
+        "date": "2022",
+        "synched": true,
+        "duration": {
+          "raw": "01:27:31.19",
+          "seconds": 5251
+        },
+        "video": {
+          "container": "mov",
+          "bitrate": 6928,
+          "stream": 0,
+          "codec": "h264",
+          "resolution": {
+            "w": 1920,
+            "h": 800
+          },
+          "resolutionSquare": {
+            "w": 1920,
+            "h": 800
+          },
+          "aspect": {
+            "x": 12,
+            "y": 5,
+            "string": "12:5",
+            "value": 2.4
+          },
+          "rotate": 0,
+          "fps": 23.98,
+          "pixelString": "1:1",
+          "pixel": 1
+        },
+        "audio": {
+          "codec": "aac",
+          "bitrate": "394",
+          "sample_rate": 48000,
+          "stream": 0,
+          "channels": {
+            "raw": "",
+            "value": ""
+          }
+        }
+      }
+    }
+  }
+]

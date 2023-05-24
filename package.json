@@ -23,6 +23,7 @@
     "typescript": "~4.9"
   },
   "scripts": {
+    "go": "yarn build && yarn start --mediaPath ./tests/movie --extensions 'avi|mov|mp4'",
     "start": "node build/src/main.js",
     "clean": "rimraf coverage build tmp",
     "prebuild": "npm run lint",
@@ -37,8 +38,13 @@
   "author": "Dan Hunt <dkhunt27@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffprobe-installer/ffprobe": "^1.4.1",
+    "cli-progress": "^3.11.2",
     "deep-reduce": "^1.0.5",
     "directory-tree": "^3.4.0",
+    "ffmpeg": "^0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
     "minimist": "^1.2.7",
     "tslib": "~2.4"
   },

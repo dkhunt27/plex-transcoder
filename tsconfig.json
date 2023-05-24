@@ -8,13 +8,13 @@
     "outDir": "build",
     "allowSyntheticDefaultImports": true,
     "importHelpers": true,
-    "alwaysStrict": true,
+    "alwaysStrict": false, // was true
     "sourceMap": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": false, // was true
+    "noUnusedParameters": false, // was true
     "noImplicitAny": false,
     "noImplicitThis": false,
     "strictNullChecks": false
